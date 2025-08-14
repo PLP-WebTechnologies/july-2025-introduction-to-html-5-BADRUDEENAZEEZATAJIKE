@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Assignment page">
+    <meta name="keywords" content="assignment,tasks,projects">
+    <meta name="author" content="Instructor Eddy">
+    <title>Week 2 - Enhanced HTML Elements</title>
+</head>
+
+<body>
+    <h2>Definition Lists</h2>
+    <dl>
+        <dt>Biochemistry</dt>
+        <dd>Biochemistry is the branch of science that studies the chemical processes and substances that occur within
+            living
+            organisms.
+        </dd>
+        <dt>Computer Science</dt>
+        <dd>Computer science is the study of computers and computational systems, focusing on how they work, how they
+            are designed,
+            and how to use them to solve problems.
+        </dd>
+    </dl>
+    <h2>Nested Lists</h2>
+    <ul>
+        <li>Books
+            <ol type="i">
+                <li>
+                    <ul>
+                        <li>Novels</li>
+                        <li>journals</li>
+                        <li>Text-books</li>
+                    </ul>
+                </li>
+                <li>Schools</li>
+                <li>Libraries</li>
+            </ol>
+        </li>
+        <li>Locations
+            <ol type="i">
+                <li>Abuja</li>
+                <li>Enugu</li>
+                <li>Ogun</li>
+                <li>Lagos</li>
+            </ol>
+        </li>
+    </ul>
+    <h2>Images</h2>
+    <img src="images/breakfast.jpg" alt="Picture of desk with cookies and a laptop." width="300" height="250">
+    <img src="https://images.pexels.com/photos/32822357/pexels-photo-32822357.jpeg" alt="Picture of a horse."
+        width="300" height="250">
+    <h2>Video</h2>
+    <video controls width="350" height="200">
+        <source src="https://videos.pexels.com/video-files/3987730/3987730-hd_1920_1080_24fps.mp4" type="video/mp4">
+        Your browser does not support video playback.
+    </video>
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
+    <h2>Tables</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Animal</th>
+                <th>Gender</th>
+                <th>Colors</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lion/td>
+                <td>Female</td>
+                <td>Brown</td>
+            </tr>
+            <tr>
+                <td>Antelope</td>
+                <td>Male</td>
+                <td>Green</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Forms</h2>
+    <form action="location" method="how" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <label for="profile">Profile Picture:</label>
+        <input type="file" name="profile" id="profile">
+        <br><br>
+        <label for="bio">Bio:</label>
+        <textarea name="bio" id="bio" rows="4" cols="50"></textarea>
+        <br><br>
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="">--Select Country--</option>
+            <option value="ghana">Ghana</option>
+            <option value="saudi">Saudi</option>
+            <option value="uk">UK</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
